@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Challenge 4</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4580ca42d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/KC-logo.png" alt="Kick and Counter Logo">
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+        <label for="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="../challenge3/index.html">Home</a></li>
+                <li><a href="#about">About&nbsp;Us</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#contact">Contact&nbsp;Us</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass">Search</i>
+            <input type="search" name="search" id="search">
+            <i class="fa-regular fa-circle-question">Help</i>
+            <i class="fa-solid fa-cart-shopping">Cart</i>
+        </div>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <div class="form-container">
+            <form action="">
+                <div class="form-group topic">
+                    <label for="topic">Please select a topic related to your enquiry</label>
+                    <select name="topic" id="topic" required>
+                        <option value="" disabled selected>Choose an enquiry topic...</option>
+                        <option value="beginner-classes">Beginner Classes</option>
+                        <option value="training-times">Training Times and availability</option>
+                        <option value="membership">Membership and pricing</option>
+                        <option value="equipment">Equipment and what to bring</option>
+                        <option value="private-group">Private or group sessions</option>
+                        <option value="general-q">General question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group firstname">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="form-group lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="form-group email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                    <button type="submit">Send</button>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footercontent">
+            <section class="footercard sitemap">
+                <nav class="footernav">
+                    <ul>
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#about">About&nbsp;Us</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#equipment">Equipment</a></li>
+                        <li><a href="#contact">Contact&nbsp;Us</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footercard footercontact">
+                <a class="footerlogo" href="#index"><img src="./images/KC-logo.png" alt="Logo"></a>
+                <p>Kick. <span>Counter. </span>Improve.</p>
+                <a href="tel:+01123456789">01123 456789</a>
+                <a href="mailto:K.C.Kickboxing@example.email">K.C.Kickboxing@example.email</a>
+            </section>
+        </div>
+        <div class="footercopyright">
+            <p>Copyright 2026. All rights reserved by K.C.Kickboxing</p>
+        </div>
+    </footer>
+</body>
+</html>
